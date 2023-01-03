@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1297.0" style="-fx-background-color: MINTCREAM;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="train.FXMLDocumentController">
+    <children>
+      <Label layoutX="398.0" layoutY="48.0" text="TRAIN DATABASE">
+         <font>
+            <Font name="MS Gothic" size="74.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="#176ab0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="233.0" text="Train number">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.883495145631068">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="312.0" text="Train name">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.883495145631068">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="536.0" text="Departure">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.883495145631068">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="453.0" text="Arrival">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.883495145631068">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="64.0" layoutY="381.0" text="Destination">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.883495145631068">
+               <stops>
+                  <Stop color="#119ef0" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="num" layoutX="313.0" layoutY="237.0" promptText="enter train number" />
+      <TextField fx:id="name" layoutX="313.0" layoutY="314.0" promptText="enter train name" />
+      <TextField fx:id="destination" layoutX="313.0" layoutY="383.0" promptText="enter destination" />
+      <TextField fx:id="arrival" layoutX="313.0" layoutY="457.0" promptText="enter arrival time" />
+      <TextField fx:id="dep" layoutX="313.0" layoutY="538.0" promptText="enter departure time" />
+      <TableView fx:id="table" layoutX="546.0" layoutY="194.0" prefHeight="441.0" prefWidth="725.0">
+        <columns>
+          <TableColumn fx:id="tno" prefWidth="75.0" text="Train no." />
+          <TableColumn fx:id="tname" prefWidth="169.0" text="Train name" />
+            <TableColumn fx:id="dest" prefWidth="188.0" text="Destination" />
+            <TableColumn fx:id="atime" prefWidth="142.0" text="Arrival time" />
+            <TableColumn fx:id="dtime" minWidth="0.0" prefWidth="150.0" text="Departure time" />
+        </columns>
+      </TableView>
+      <Button layoutX="313.0" layoutY="620.0" mnemonicParsing="false" onAction="#add" text="submit">
+         <textFill>
+            <LinearGradient endX="0.024271844660194164" endY="1.0" startX="1.0" startY="0.9805825242718447">
+               <stops>
+                  <Stop color="#1aa6d6" />
+                  <Stop color="#044054" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Consolas Bold" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
